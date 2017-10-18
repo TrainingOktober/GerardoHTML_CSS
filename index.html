@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Oktana - Contact Search</title>	
+	<link rel="stylesheet" href="slds/assets/styles/salesforce-lightning-design-system.min.css" />
+	<link rel="stylesheet" type="text/css" href="assets/style.css" />
+</head>
+<body>
+	<div class="slds-scope">
+		<div class="main">
+			<div class="top">
+				<div class="top-logo"><img class="logo" src="./assets/oktana-logo.png"></div>
+				<div class="top-profile">
+					<img src="./assets/profile.jpeg" alt="Octavio Stark">
+					<span>Octavio Stark</span>
+				</div>
+			</div>
+			<div class="menu">
+				<div class="slds-tabs_default">
+					<ul class="slds-tabs_default__nav" role="tablist">
+				    	<li class="slds-tabs_default__item" title="Item One" role="presentation"><a class="slds-tabs_default__link" href="javascript:void(0);" role="tab" tabindex="0" aria-selected="true" aria-controls="tab-default-1" id="tab-default-1__item">MY HOME</a></li>
+				    	<li class="slds-tabs_default__item" title="Item Two" role="presentation"><a class="slds-tabs_default__link" href="javascript:void(0);" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-default-2" id="tab-default-2__item">TOK</a></li>
+				    	<li class="slds-tabs_default__item" title="Item Three" role="presentation"><a class="slds-tabs_default__link" href="javascript:void(0);" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-default-3" id="tab-default-3__item">TIMESHEET</a></li>
+				    	<li class="slds-tabs_default__item" title="Item Three" role="presentation"><a class="slds-tabs_default__link" href="javascript:void(0);" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-default-3" id="tab-default-3__item">MY COMPANY</a></li>
+				    	<li class="slds-tabs_default__item slds-is-active" title="Item Three" role="presentation"><a class="slds-tabs_default__link" href="javascript:void(0);" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-default-3" id="tab-default-3__item">CONTACT SEARCH</a></li>
+					</ul>				  
+				</div>
+			</div>
+			<div id="tab-default-1" class="slds-tabs_default__content slds-hide" role="tabpanel" aria-labelledby="tab-default-1__item">MY HOME</div>
+			<div id="tab-default-2" class="slds-tabs_default__content slds-hide" role="tabpanel" aria-labelledby="tab-default-2__item">TOK</div>
+			<div id="tab-default-3" class="slds-tabs_default__content slds-hide" role="tabpanel" aria-labelledby="tab-default-3__item">TIMESHEET</div>
+			<div id="tab-default-4" class="slds-tabs_default__content slds-hide" role="tabpanel" aria-labelledby="tab-default-4__item">MY COMPANY</div>
+			<div id="tab-default-5" class="slds-tabs_default__content slds-show" role="tabpanel" aria-labelledby="tab-default-5__item">
+				<div class="left-bar">
+					<div class="slds-form slds-form_stacked">
+						<div class="slds-form-element">
+							<label class="slds-form-element__label" for="input-id-01">SEARCH</label>
+							<div class="slds-form-element__control">
+								<input type="text" id="input-id-01" class="slds-input" placeholder="" />
+							</div>
+						</div>					  
+						<fieldset class="slds-form-element">
+							<legend class="slds-form-element__legend slds-form-element__label">TYPE</legend>
+							<div class="slds-form-element__control">
+								<span class="slds-checkbox">
+							    	<input type="checkbox" name="default" id="checkbox-1" value="on" checked />
+							    	<label class="slds-checkbox__label" for="checkbox-1">
+							    		<span class="slds-checkbox_faux"></span>
+							    		<span class="slds-form-element__label">Employee</span>
+							    	</label>
+							  	</span>
+							  	<span class="slds-checkbox">
+							    	<input type="checkbox" name="default" id="checkbox-2" value="on" />
+							    	<label class="slds-checkbox__label" for="checkbox-2">
+							      		<span class="slds-checkbox_faux"></span>
+							      		<span class="slds-form-element__label">Candidate</span>
+							    	</label>
+							  	</span>
+							  	<span class="slds-checkbox">
+							    	<input type="checkbox" name="default" id="checkbox-3" value="on" />
+							    	<label class="slds-checkbox__label" for="checkbox-3">
+							      		<span class="slds-checkbox_faux"></span>
+							     		<span class="slds-form-element__label">Former Employee</span>
+							    	</label>
+							  	</span>
+							</div>
+						</fieldset>
+						<div class="slds-form-element">
+						<label class="slds-form-element__label" for="input-id-01">SKILLS</label>
+						<div class="slds-form-element__control">
+							<input type="text" id="input-id-01" class="slds-input skills-imput" placeholder="" />
+							<button class="slds-button slds-button_neutral">+</button>
+						</div>
+						</div>
+						<div class="slds-form-element slds-text-align_center">
+							<button class="slds-button slds-button_brand">Filter</button>
+							<a href="javascript:void(0);" > Clear All </a>
+						</div>
+					</div>
+				</div>
+				<div class="content">4</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
